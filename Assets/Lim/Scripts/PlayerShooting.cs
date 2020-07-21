@@ -18,7 +18,7 @@ public class PlayerShooting : MonoBehaviour
     Vector2 playerPos;              //플레이어
     Vector2 towadMouse;             //마우스까지의 벡터
 
-    float radius;                   //스크린 꼭지점에서 중심점까지 길이
+    float sqrRadius;                //스크린 꼭지점에서 중심점까지 길이의 제곱
     Vector2 screenVerticeCoord;     //스크린 맨 오른쪽 좌표
     
         
@@ -36,7 +36,7 @@ public class PlayerShooting : MonoBehaviour
     private void Start()            //초기화
     {
         screenVerticeCoord = Camera.main.ViewportToWorldPoint(new Vector2(1, 0));
-        radius = Vector2.SqrMagnitude(screenVerticeCoord);
+        sqrRadius = Vector2.SqrMagnitude(screenVerticeCoord);
 
         startTime = Time.time;
 
@@ -82,7 +82,7 @@ public class PlayerShooting : MonoBehaviour
         {
             if(fruit[i].gameObject)
             {
-                if(Vector2.SqrMagnitude(fruit[i].gameObject.transform.position) > radius )      //원점으로부터 과일의 거리가 일정 거리(radius)보다 멀어지면
+                if(Vector2.SqrMagnitude(fruit[i].gameObject.transform.position) > sqrRadius )      //원점으로부터 과일의 거리가 일정 거리(radius)보다 멀어지면
                 {
                     fruitPool.RemoveFruit(fruit[i].gameObject);
                     fruit[i].gameObject = null;

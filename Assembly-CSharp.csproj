@@ -63,7 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Lim\Scripts\FruitMemoryPool.cs" />
-    <Compile Include="Assets\Lim\Scripts\FruitMove.cs" />
     <Compile Include="Assets\Lim\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Lim\Scripts\PlayerShooting.cs" />
     <Reference Include="UnityEngine">
@@ -626,6 +625,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
