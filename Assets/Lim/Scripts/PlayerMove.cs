@@ -30,9 +30,6 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        
-        //transform.position += playerMoveVec * playerSpeed * Time.fixedDeltaTime;
         playerRigid.MovePosition(transform.position + playerMoveVec * playerSpeed * Time.fixedDeltaTime);
-
     }
 }

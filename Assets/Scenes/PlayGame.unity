@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 1307796833}
   - component: {fileID: 1307796832}
   - component: {fileID: 1307796831}
+  - component: {fileID: 1307796834}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -300,7 +301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6477fdef7bb7a234a86502385129ba22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 10
+  playerSpeed: 2
 --- !u!61 &1307796832
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -348,3 +349,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1307796834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307796828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1d216c603de63042904564fcd08d76d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruitPrefab: {fileID: 4869237647877124387, guid: 09cd4ba50d74e9b43be7f8e8be501290,
+    type: 3}
+  fireRate: 0.5
+  fruitSpeed: 30
