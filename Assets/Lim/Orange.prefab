@@ -14,11 +14,11 @@ GameObject:
   - component: {fileID: 3440861063444199069}
   m_Layer: 0
   m_Name: Orange
-  m_TagString: Untagged
+  m_TagString: Orange
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5108870604312826422
 Transform:
   m_ObjectHideFlags: 0
