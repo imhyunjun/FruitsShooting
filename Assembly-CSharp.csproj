@@ -63,8 +63,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Lim\Scripts\FruitMemoryPool.cs" />
+    <Compile Include="Assets\Lim\Scripts\OnClickButton.cs" />
+    <Compile Include="Assets\Lim\Scripts\PlayerCollision.cs" />
     <Compile Include="Assets\Lim\Scripts\PlayerMove.cs" />
     <Compile Include="Assets\Lim\Scripts\PlayerShooting.cs" />
+    <Compile Include="Assets\Lim\Scripts\TimeScore.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
