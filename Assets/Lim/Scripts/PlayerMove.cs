@@ -17,6 +17,7 @@ public class PlayerMove : MonoBehaviour
     private void Start()
     { 
         playerSpeed = 10f;
+        transform.position = Vector2.zero;
     }
 
     private void Update()

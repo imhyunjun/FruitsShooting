@@ -65,6 +65,7 @@
     <Compile Include="Assets\Hong\Script\ZombieCollision.cs" />
     <Compile Include="Assets\Hong\Script\ZombieMove.cs" />
     <Compile Include="Assets\Hong\Script\ZombieSpawn.cs" />
+    <Compile Include="Assets\Lim\Scripts\FruitCollision.cs" />
     <Compile Include="Assets\Lim\Scripts\FruitMemoryPool.cs" />
     <Compile Include="Assets\Lim\Scripts\OnClickButton.cs" />
     <Compile Include="Assets\Lim\Scripts\PlayerCollision.cs" />
@@ -637,6 +638,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
