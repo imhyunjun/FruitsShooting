@@ -37,12 +37,12 @@ MonoBehaviour:
   m_Name: Fruit2
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 3
+  take: 4
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
       m_Root: 5
-      m_Leaf: C:/Users/limhy/Desktop/Recordings
+      m_Leaf: "C:/Users/limhy/Desktop/\uACFC\uC77C\uC288\uD305/Recordings"
       m_ForceAssetFolder: 0
     m_FileName: movie
   outputFormat: 0

@@ -65,6 +65,8 @@
     <Compile Include="Assets\Hong\Script\ZombieCollision.cs" />
     <Compile Include="Assets\Hong\Script\ZombieMove.cs" />
     <Compile Include="Assets\Hong\Script\ZombieSpawn.cs" />
+    <Compile Include="Assets\Lim\Scripts\CSVReader.cs" />
+    <Compile Include="Assets\Lim\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Lim\Scripts\FruitCollision.cs" />
     <Compile Include="Assets\Lim\Scripts\FruitMemoryPool.cs" />
     <Compile Include="Assets\Lim\Scripts\OnClickButton.cs" />
@@ -603,6 +605,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -633,17 +638,14 @@
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>C:/Users/limhy/workspace/unitygame/UnityStudy/FruitShooting/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
