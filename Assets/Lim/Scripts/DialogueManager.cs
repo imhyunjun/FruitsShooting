@@ -40,6 +40,7 @@ public class DialogueManager : MonoBehaviour
                     break;
                 case 10:
                     Debug.Log("타이틀 화면으로");
+                    //GameObject.SetActive(true);는 업데이트에서 못쓰나요? 구글에서는 스타트함수에서만 사용하긴 하더라구요...........
                     dialOrder = 0;
                     break;
                 default:
