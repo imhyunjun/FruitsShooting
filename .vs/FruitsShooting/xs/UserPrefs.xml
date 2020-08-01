@@ -1,18 +1,13 @@
 ﻿<Properties StartupConfiguration="{0E1D80DD-C97F-A99F-EC30-1994A4370C68}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Lim/Scripts/DialogueManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hong/Script/PauseMenu.cs">
     <Files>
-      <File FileName="Assets/Lim/Scripts/PlayerShooting.cs" Line="34" Column="32" />
-      <File FileName="Assets/Hong/Script/ZombieSpawn.cs" />
-      <File FileName="Assets/Hong/Script/ZombieMove.cs" />
-      <File FileName="Assets/Lim/Scripts/FruitMemoryPool.cs" />
-      <File FileName="Assets/Lim/Scripts/TimeScore.cs" />
-      <File FileName="Assets/Hong/Script/ZombieCollision.cs" />
-      <File FileName="Assets/Lim/Scripts/DialogueManager.cs" Line="38" Column="24" />
+      <File FileName="Assets/Hong/Script/PauseMenu.cs" Line="36" Column="1" />
+      <File FileName="Assets/Hong/Script/Quit.cs" Line="12" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="510df4c3-b99e-4295-a4f3-1b0964859ee9" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d4791942-c285-45f8-8f9f-afb13c775842" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Hong\Script\PauseMenu.cs" />
+    <Compile Include="Assets\Hong\Script\Quit.cs" />
     <Compile Include="Assets\Hong\Script\ZombieCollision.cs" />
     <Compile Include="Assets\Hong\Script\ZombieMove.cs" />
     <Compile Include="Assets\Hong\Script\ZombieSpawn.cs" />
