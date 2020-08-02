@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Hong\Script\MainBtn.cs" />
     <Compile Include="Assets\Hong\Script\PauseMenu.cs" />
     <Compile Include="Assets\Hong\Script\Quit.cs" />
     <Compile Include="Assets\Hong\Script\Zombie.cs" />
@@ -610,6 +611,9 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/hongg/Documents/GitHub/FruitsShooting/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>/Users/hongg/Documents/GitHub/FruitsShooting/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>/Users/hongg/Documents/GitHub/FruitsShooting/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -640,17 +644,14 @@
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>/Users/hongg/Documents/GitHub/FruitsShooting/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>/Users/hongg/Documents/GitHub/FruitsShooting/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>/Users/hongg/Documents/GitHub/FruitsShooting/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>/Users/hongg/Documents/GitHub/FruitsShooting/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Cinemachine">
-      <HintPath>/Users/hongg/Documents/GitHub/FruitsShooting/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
-    </Reference>
-    <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>/Users/hongg/Documents/GitHub/FruitsShooting/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class DialogueManager : MonoBehaviour
                     break;
                 case 10:
                     Debug.Log("타이틀 화면으로");
-                    //Main.gameObject.SetActive(true);
+                    SceneManager.LoadScene("Main");
                     dialOrder = 0;
                     break;
                 default:
