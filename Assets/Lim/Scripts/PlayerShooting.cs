@@ -11,6 +11,7 @@ public class PlayerShooting : MonoBehaviour
     float startTime;
     float shootTimeLeft;            //다음 발사까지 시간
 
+    [SerializeField]
     int fruitCount;                 //과일 갯수
 
     public float fruitSpeed;        //과일 날아가는 속도
@@ -43,7 +44,7 @@ public class PlayerShooting : MonoBehaviour
 
         startTime = Time.time;
 
-        fruitCount = 20;
+        fruitCount = 10;
         fruitPool.Create(fruitPrefab, fruitCount);
         fruit = new Fruit[fruitCount];
         for(int i = 0; i < fruit.Length; i++)
