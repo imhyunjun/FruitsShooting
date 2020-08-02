@@ -1,4 +1,5 @@
 ﻿<Properties StartupConfiguration="{0E1D80DD-C97F-A99F-EC30-1994A4370C68}|">
+<<<<<<< Updated upstream
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hong/Script/ZombieSpawn.cs">
     <Files>
       <File FileName="Assets/Hong/Script/ZombieCollision.cs" Line="9" Column="87" />
@@ -6,6 +7,13 @@
       <File FileName="Assets/Hong/Script/ZombieSpawn.cs" Line="24" Column="2" />
       <File FileName="Assets/Hong/Script/ZombieMove.cs" Line="30" Column="70" />
       <File FileName="Assets/Lim/Scripts/FruitMemoryPool.cs" Line="1" Column="1" />
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hong/Script/MainBtns.cs">
+    <Files>
+      <File FileName="Assets/Hong/Script/PauseMenu.cs" Line="36" Column="1" />
+      <File FileName="Assets/Hong/Script/Quit.cs" />
+      <File FileName="Assets/Hong/Script/MainBtns.cs" Line="4" Column="14" />
+>>>>>>> Stashed changes
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
