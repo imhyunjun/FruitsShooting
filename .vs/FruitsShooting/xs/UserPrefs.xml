@@ -1,19 +1,24 @@
 ﻿<Properties StartupConfiguration="{0E1D80DD-C97F-A99F-EC30-1994A4370C68}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hong/Script/PauseMenu.cs">
     <Files>
-      <File FileName="Assets/Hong/Script/Zombie.cs" Line="7" Column="4" />
-      <File FileName="Assets/Hong/Script/ZombieCollision.cs" />
-      <File FileName="Assets/Lim/Scripts/DialogueManager.cs" Line="42" Column="25" />
-      <File FileName="Assets/Hong/Script/Quit.cs" />
-      <File FileName="Assets/Hong/Script/PauseMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets/Hong/Script/MainBtn.cs" Line="18" Column="1" />
+      <File FileName="Assets/Hong/Script/Zombie.cs" Line="15" Column="1" />
+      <File FileName="Assets/Hong/Script/ZombieCollision.cs" Line="14" Column="29" />
+      <File FileName="Assets/Hong/Script/PauseMenu.cs" Line="26" Column="1" />
+      <File FileName="Assets/Hong/Script/MainBtn.cs" />
+      <File FileName="Assets/Lim/Scripts/PlayerCollision.cs" Line="15" Column="38" />
+      <File FileName="Assets/Hong/Script/ZombieMemoryPool.cs" />
+      <File FileName="Assets/Hong/Script/ZombieMove.cs" />
+      <File FileName="Assets/Hong/Script/ZombieSpawn.cs" />
+      <File FileName="Assets/Lim/Scripts/DialogueManager.cs" Line="21" Column="35" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d4791942-c285-45f8-8f9f-afb13c775842" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/hongg/Documents/GitHub/FruitsShooting/Assets/Hong/Script/ZombieMemoryPool.cs" relfile="Assets/Hong/Script/ZombieMemoryPool.cs" line="30" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

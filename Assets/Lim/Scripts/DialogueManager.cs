@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class DialogueManager : MonoBehaviour
 {
     public Text dialText;
-    public GameObject zombie;                   //좀비
     public GameObject player;                   //플레이어
 
     int dialCount;                              //대화 갯수
@@ -19,11 +18,11 @@ public class DialogueManager : MonoBehaviour
     {
         dialOrder = 0;
         Time.timeScale = 0;
+        Debug.Log(Time.timeScale);
         dialData = CSVReader.Read("Tutorial");                  //csv파일에서 대화창 불러오기
         dialCount = dialData.Count;
         SetDial(dialOrder, "System");
 
-        zombie.SetActive(false);                                //우선은 비활성 나중에 그냥 없앨지 결정
     }
 
     void Update()

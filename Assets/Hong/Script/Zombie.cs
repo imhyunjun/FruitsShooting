@@ -4,5 +4,11 @@ using UnityEngine;
 
 public class Zombie : MonoBehaviour
 {
+    public void DestroyZombie()
+    {
+        ZombieMemoryPool.ReturnObject(this);
+    }
+
    
+
 }

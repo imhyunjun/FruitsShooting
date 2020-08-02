@@ -657,7 +657,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialText: {fileID: 271441664}
-  zombie: {fileID: 0}
   player: {fileID: 1270150035}
 --- !u!1 &882086892
 GameObject:

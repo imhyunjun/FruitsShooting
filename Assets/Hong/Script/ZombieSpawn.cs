@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class ZombieSpawn : MonoBehaviour
 {
-    public bool enableSpawn = false;
 
     void SpawnZombie()
     {
         float randomX = Random.Range(-20, 20); //적이 나타날 X좌표를 랜덤으로 생성해 줍니다.
         float randomY = Random.Range(-20, 20); //이건 y좌표 !
-
-        if (enableSpawn)
-        {
-            var zombie = ZombieMemoryPool.GetObject();
-            var direction = new Vector2(randomX, randomY);
-
-        }
+        var zombie = ZombieMemoryPool.GetObject();
+        var direction = new Vector2(randomX,randomY);
+        zombie.transform.position = direction;
+        Debug.Log(direction);
+        
     }
     void Start()
     {
