@@ -5,7 +5,6 @@ using UnityEngine;
 public class ZombieSpawn : MonoBehaviour
 {
     public bool enableSpawn = false;
-    public GameObject zombie; //Prefab을 받을 public 변수 입니다.
 
     void SpawnZombie()
     {
@@ -14,11 +13,16 @@ public class ZombieSpawn : MonoBehaviour
 
         if (enableSpawn)
         {
-            GameObject Zombie = (GameObject)Instantiate(zombie, new Vector3(randomX, randomY, 0f), Quaternion.identity); //랜덤한 위치와, 화면 제일 위에서 좀비를 하나 생성함
+            var zombie = ZombieMemoryPool.GetObject();
+            var direction = new Vector2(randomX, randomY);
+
         }
     }
     void Start()
     {
         InvokeRepeating("SpawnZombie", 3, 1); //3초후 부터, SpawnZombie함수를 1초마다 반복해서 실행 시킵니다.
     }
+
+
+
 }
