@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 97653038}
   - component: {fileID: 97653037}
   - component: {fileID: 97653036}
+  - component: {fileID: 97653039}
   m_Layer: 5
   m_Name: ChooseFruitPanel
   m_TagString: Untagged
@@ -179,7 +180,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_StartCorner: 3
+  m_StartCorner: 0
   m_StartAxis: 1
   m_CellSize: {x: 40, y: 40}
   m_Spacing: {x: 0, y: 30}
@@ -222,6 +223,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 97653034}
   m_CullTransparentMesh: 0
+--- !u!114 &97653039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97653034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9cabec8dbbf8834089644b54b696762, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &142820882
 GameObject:
   m_ObjectHideFlags: 0

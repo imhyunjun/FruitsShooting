@@ -12,7 +12,6 @@ public class ZombieSpawn : MonoBehaviour
         var zombie = ZombieMemoryPool.GetObject();
         var direction = new Vector2(randomX,randomY);
         zombie.transform.position = direction;
-        Debug.Log(direction);
         
     }
     void Start()

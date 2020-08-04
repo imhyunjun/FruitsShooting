@@ -71,6 +71,7 @@
     <Compile Include="Assets\Hong\Script\ZombieMove.cs" />
     <Compile Include="Assets\Hong\Script\ZombieSpawn.cs" />
     <Compile Include="Assets\Lim\Scripts\CSVReader.cs" />
+    <Compile Include="Assets\Lim\Scripts\ChooseFruit.cs" />
     <Compile Include="Assets\Lim\Scripts\DialogueManager.cs" />
     <Compile Include="Assets\Lim\Scripts\FruitCollision.cs" />
     <Compile Include="Assets\Lim\Scripts\FruitMemoryPool.cs" />
