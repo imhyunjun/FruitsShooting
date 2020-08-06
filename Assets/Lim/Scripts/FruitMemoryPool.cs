@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 미리 만들어 놓은 과일을 재활용( 과일 하나)
-public class FruitMemoryPool : IEnumerable, IDisposable
+public class FruitMemoryPool : IDisposable //IEnumerable
 {
     class Fruit
     {
@@ -12,30 +12,30 @@ public class FruitMemoryPool : IEnumerable, IDisposable
         public GameObject gameObject;   //저장할 게임 오브젝트
     }
 
-    Fruit[] fruitTable;                 //과일을 담을 공간
+    Fruit[] fruitTable;                                         //과일을 담을 공간
+    List<Fruit[]> fruitsList = new List<Fruit[]>();             //과일 여러개 담을 공간
 
-    public IEnumerator GetEnumerator()
-    {
-        if(fruitTable == null)
-        {
-            yield break;
-        }
+    //public IEnumerator GetEnumerator()
+    //{
+    //    if (fruitTable == null)
+    //    {
+    //        yield break;
+    //    }
 
-        int count = fruitTable.Length;
-        for(int i = 0; i < count; i ++)
-        {
-            Fruit fruit = fruitTable[i];
-            if(fruit.isActive)
-            {
-                yield return fruit.gameObject;
-            }
-        }
-    }
+    //    int count = fruitTable.Length;
+    //    for (int i = 0; i < count; i++)
+    //    {
+    //        Fruit fruit = fruitTable[i];
+    //        if (fruit.isActive)
+    //        {
+    //            yield return fruit.gameObject;
+    //        }
+    //    }
+    //}
 
     //메모리 풀 생성 
     public void Create(GameObject _original, int _count)        //_object는 원본, _count 는 최대 갯수, 
     {
-        Dispose();                                          //메모리 관리
         fruitTable = new Fruit[_count];
         for(int i = 0; i < _count; i++)
         {
@@ -45,42 +45,44 @@ public class FruitMemoryPool : IEnumerable, IDisposable
             fruit.gameObject.SetActive(false);
             fruitTable[i] = fruit;
         }
-
+        fruitsList.Add(fruitTable);
     }
 
 
     //사용하지 않는 과일 사용
-    public GameObject NewFruit()
+    public GameObject NewFruit(int _fruitOrder)
     {
-        if(fruitTable == null)
+        Fruit[] tempFruit = fruitsList[_fruitOrder];
+        if(fruitsList[_fruitOrder] == null)
         {
             return null;
         }
-        for(int i = 0; i < fruitTable.Length; i++)
+        for(int i = 0; i < tempFruit.Length; i++)
         {
-            if(!fruitTable[i].isActive)
+            if(!tempFruit[i].isActive)
             {
-                fruitTable[i].isActive = true;          //사용하지 않는 다면 다시 사용
-                fruitTable[i].gameObject.SetActive(true);
-                return fruitTable[i].gameObject;
+                tempFruit[i].isActive = true;          //사용하지 않는 다면 다시 사용
+                tempFruit[i].gameObject.SetActive(true);
+                return tempFruit[i].gameObject;
             }
         }
         return null;
     }
 
     //사용하던 과일 제거
-    public void RemoveFruit(GameObject _gameObject)
+    public void RemoveFruit(GameObject _gameObject, int _fruitOrder)
     {
-        if(fruitTable == null || _gameObject == null)
+        Fruit[] tempFruit = fruitsList[_fruitOrder];
+        if (tempFruit == null || _gameObject == null)
         {
             return;
         }
-        for(int i = 0; i < fruitTable.Length; i++)
+        for(int i = 0; i < tempFruit.Length; i++)
         {
-            if(fruitTable[i].gameObject == _gameObject)
+            if(tempFruit[i].gameObject == _gameObject)
             {
-                fruitTable[i].isActive = false;
-                fruitTable[i].gameObject.SetActive(false);
+                tempFruit[i].isActive = false;
+                tempFruit[i].gameObject.SetActive(false);
                 break;
             }
         }

@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
-    public GameObject fruitPrefab;
+    public GameObject strawberryPrefab;
+    public GameObject bananaPrefab;
     public Camera cinemachine;
 
     public float fireRate;          //발사 간격
@@ -23,21 +24,21 @@ public class PlayerShooting : MonoBehaviour
     float sqrRadius;                //스크린 꼭지점에서 플레이어까지 거리의 제곱
     Vector2 screenVerticeCoord;     //스크린 맨 오른쪽 좌표
 
-    
-    
-        
+    FruitMemoryPool fruitPool = new FruitMemoryPool();                      //과일 메모리 풀 생성
+    int selected;                   //선택된 번호
 
-    FruitMemoryPool fruitPool = new FruitMemoryPool();                    //과일 메모리 풀 생성
+    List<Fruit[]> listOfFruits = new List<Fruit[]>();                       //딸기, 바나나의 배열을 담는 리스트
 
-    public struct Fruit
+    struct Fruit                    //일단 구조체로 정리
     {
         public GameObject gameObject;
         public Vector3 fruitDirVec;
     }
-
-    Fruit[] fruit;
-
-    private void Start()            //초기화
+   
+    Fruit[] currentFruit;             //딸기들  담을 배열
+    Fruit[] banana;                 //바나나
+    
+    private void Start()                //초기화
     {
         screenVerticeCoord = Camera.main.ViewportToWorldPoint(new Vector2(1, 0));
         sqrRadius = (screenVerticeCoord - playerPos).sqrMagnitude;
@@ -45,13 +46,25 @@ public class PlayerShooting : MonoBehaviour
         startTime = Time.time;
 
         fruitCount = 10;
-        fruitPool.Create(fruitPrefab, fruitCount);
-        fruit = new Fruit[fruitCount];
-        for(int i = 0; i < fruit.Length; i++)
+        fruitPool.Create(strawberryPrefab, fruitCount);
+        fruitPool.Create(bananaPrefab, fruitCount);
+
+        currentFruit = new Fruit[fruitCount];
+        banana = new Fruit[fruitCount];
+
+        selected = 0;                                               //처음 값은 0
+
+        for (int i = 0; i < currentFruit.Length; i++)
         {
-            fruit[i].gameObject = null;
-            fruit[i].fruitDirVec = Vector3.zero;
+            currentFruit[i].gameObject = null;
+            currentFruit[i].fruitDirVec = Vector3.zero;
+
+            banana[i].gameObject = null;
+            banana[i].fruitDirVec = Vector3.zero;
         }
+        listOfFruits.Add(currentFruit);                                   //리스트에 과일들 추가 딸기: 0 바나나 : 1
+        Debug.Log(currentFruit);
+        listOfFruits.Add(banana);
     }
 
     private void Update()
@@ -59,21 +72,34 @@ public class PlayerShooting : MonoBehaviour
         playerPos = transform.position;
         shootTimeLeft = Time.time - startTime;
 
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            selected = 0;
+            Debug.Log(selected);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            selected = 1;
+            Debug.Log(selected);
+        }
+
+        Fruit[] currentFruit = listOfFruits[selected];   //현재 쏠 과일
+
         if (Input.GetMouseButtonDown(0))                                                         
         {
             mousPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             towadMouse = mousPos - playerPos;
-
-            if (shootTimeLeft > fireRate)                                           //미사일 발사
+   
+            if (shootTimeLeft > fireRate)                                               //미사일 발사
             {
-                for(int i = 0; i < fruit.Length; i++)
+                for(int i = 0; i < currentFruit.Length; i++)
                 {
-                    if(fruit[i].gameObject == null)
+                    if(currentFruit[i].gameObject == null)
                     {
-                        fruit[i].gameObject = fruitPool.NewFruit();
-                        fruit[i].gameObject.transform.position = transform.position;
-                        fruit[i].fruitDirVec = towadMouse;
-                        fruit[i].gameObject.GetComponent<Rigidbody2D>().velocity = fruit[i].fruitDirVec.normalized * fruitSpeed;
+                        currentFruit[i].gameObject = fruitPool.NewFruit(selected);
+                        currentFruit[i].gameObject.transform.position = transform.position;
+                        currentFruit[i].fruitDirVec = towadMouse;
+                        currentFruit[i].gameObject.GetComponent<Rigidbody2D>().velocity = currentFruit[i].fruitDirVec.normalized * fruitSpeed;
                         break;
                     }
                 }
@@ -82,16 +108,16 @@ public class PlayerShooting : MonoBehaviour
         }
 
         //미사일 삭제 - 우선 거리 위주로, 좀비는 다른 스크립트(FruitCollision에서)
-        for (int i = 0; i < fruit.Length; i++)
+        for (int i = 0; i < currentFruit.Length; i++)
         {
-            if(fruit[i].gameObject)
+            if(currentFruit[i].gameObject)
             {
-                Vector2 fruitPos = fruit[i].gameObject.transform.position;
+                Vector2 fruitPos = currentFruit[i].gameObject.transform.position;
                 if((fruitPos- playerPos).sqrMagnitude > sqrRadius )      //원점으로부터 과일의 거리가 일정 거리(radius)보다 멀어지면
                 {
-                    fruitPool.RemoveFruit(fruit[i].gameObject);
-                    fruit[i].gameObject = null;
-                    fruit[i].fruitDirVec = Vector2.zero;
+                    fruitPool.RemoveFruit(currentFruit[i].gameObject, selected);
+                    currentFruit[i].gameObject = null;
+                    currentFruit[i].fruitDirVec = Vector2.zero;
                 }
             }
         }

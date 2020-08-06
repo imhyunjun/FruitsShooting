@@ -7,9 +7,9 @@ public class ChooseFruit : MonoBehaviour
 {
     Image[] selectFruit;                    //쏠 과일 고르는 이미지 배열 
     Color[] tempColor;                      //임시 색 배열
-    Color selectedBefore;                   //전에 선택한 번호
+    Color selectedBeforeColor;                   //전에 선택한 번호
     Image selectedNow;                      //현재 선택되어 있는 과일
-    int selectedIndex;                      //현재 선택되어 있는 번호
+    int selectedIndex;                     //현재 선택되어 있는 번호
 
     int countFruit;                         //쏠 수 있는 과일 개수(현재는 두개 바나나, 딸기)
 
@@ -18,7 +18,7 @@ public class ChooseFruit : MonoBehaviour
             KeyCode.Alpha2
         };
 
-    void Start()
+    protected void Start()
     {
         countFruit = transform.childCount;
         selectFruit = new Image[countFruit];
@@ -40,10 +40,7 @@ public class ChooseFruit : MonoBehaviour
         }
         selectedIndex = 0;
         selectedNow = selectFruit[selectedIndex];
-        selectedBefore = selectFruit[0].color;
-
-       
-        
+        selectedBeforeColor = selectFruit[0].color;  
     }
 
     private void Update()
@@ -53,18 +50,16 @@ public class ChooseFruit : MonoBehaviour
     }
 
     //과일 선택( 1- 9) 까지만
-    void ChangeFruit(int _i)
-    { 
-        if(Input.GetKeyDown(keyCodes[_i -1]))                       
-        {
-
-            selectedBefore = selectFruit[_i - 1].color;
-            selectFruit[_i - 1].color = selectedNow.color;              //예) _i = 2 2번이 눌렸다. 배열 1번에 현재 선택되있는(배열0번)의 색을 대입
-            selectFruit[selectedIndex].color = selectedBefore;          //그 전에 선택된(배열 0번)그림에 원래 배열(1번의) 색을 대입
-                                                                        
-            selectedIndex = _i - 1;                                     //현재 인덱스를 1로 지정
-            selectedNow = selectFruit[selectedIndex];                   //현재 선택된 이미지를 배열1 로 지정
-        }
-    }
-
+   void ChangeFruit(int _i)
+   { 
+       if(Input.GetKeyDown(keyCodes[_i -1]))                       
+       {
+           selectedBeforeColor = selectFruit[_i - 1].color;
+           selectFruit[_i - 1].color = selectedNow.color;                      //예) _i = 2 2번이 눌렸다. 배열 1번에 현재 선택되있는(배열0번)의 색을 대입
+           selectFruit[selectedIndex].color = selectedBeforeColor;             //그 전에 선택된(배열 0번)그림에 원래 배열(1번의) 색을 대입
+                                                                       
+           selectedIndex = _i - 1;                                             //현재 인덱스를 1로 지정
+           selectedNow = selectFruit[selectedIndex];                           //현재 선택된 이미지를 배열1 로 지정
+       }
+   }
 }
