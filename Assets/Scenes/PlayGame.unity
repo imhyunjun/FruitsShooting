@@ -492,8 +492,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2ad4959b59c544eeba38126aba1c431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolingObjectPrfab: {fileID: 1685091467389112426, guid: 0e8d2bfab598c4bbd9b06db4de23f99d,
-    type: 3}
+  zombieList:
+  - {fileID: 1685091467389112426, guid: 0e8d2bfab598c4bbd9b06db4de23f99d, type: 3}
+  - {fileID: 4807607697003028636, guid: fd9d5ae50e517440f83616f5ba860dfb, type: 3}
 --- !u!4 &245977471
 Transform:
   m_ObjectHideFlags: 0

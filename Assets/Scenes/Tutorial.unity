@@ -890,10 +890,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d216c603de63042904564fcd08d76d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruitPrefab: {fileID: 4869237647877124387, guid: 09cd4ba50d74e9b43be7f8e8be501290,
+  strawberryPrefab: {fileID: 4869237647877124387, guid: 09cd4ba50d74e9b43be7f8e8be501290,
+    type: 3}
+  bananaPrefab: {fileID: 1041987475801130732, guid: 839a208b0bfa4774cb3d8bb6b8b14a89,
     type: 3}
   cinemachine: {fileID: 0}
   fireRate: 0.5
+  fruitCount: 0
   fruitSpeed: 30
 --- !u!114 &1270150039
 MonoBehaviour:

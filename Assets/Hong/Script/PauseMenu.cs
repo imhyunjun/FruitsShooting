@@ -18,6 +18,11 @@ public class PauseMenu : MonoBehaviour
         {
             paused = !paused;
         }
+    }
+
+    void FixedUpdate()
+    {
+        
         if (paused) //일시정지
         {
             PauseUI.SetActive(true);
