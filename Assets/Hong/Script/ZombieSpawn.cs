@@ -29,7 +29,7 @@ public class ZombieSpawn : MonoBehaviour
             SpawnZombie(id);
             yield return new WaitForSeconds(second);//second만큼 대기
         }
-        yield return null; //접근할 수 없는 코드래요 (와일문이 안끝나서 실행이 ㅇㅏㄴ된대요)
+        //yield return null; //접근할 수 없는 코드래요 (와일문이 안끝나서 실행이 ㅇㅏㄴ된대요)
     }
 
 }
