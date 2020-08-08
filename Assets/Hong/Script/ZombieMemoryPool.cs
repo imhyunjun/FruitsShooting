@@ -16,7 +16,7 @@ public class ZombieMemoryPool : MonoBehaviour
     private void Awake()//오브젝트 풀 초기화
     {
         Instance = this;//오브젝트풀 인스턴스에 자기 할당화 (싱글톤)
-        for(int i = 0; i<zombieList.Count; i++) //
+        for (int i = 0; i < zombieList.Count; i++) //
         {
             poolingObjectQueue.Add(new Queue<Zombie>());
 
@@ -27,7 +27,7 @@ public class ZombieMemoryPool : MonoBehaviour
 
     private void Initialize(int initCount, int id)     // 게임 시작전 미리 게임 오브젝트를 만들어 놓는다(과부화방지)
     {
-        for(int i = 0; i<initCount; i++)
+        for (int i = 0; i < initCount; i++)
         {
             poolingObjectQueue[id].Enqueue(CreateNewObject(id));
         }
@@ -44,7 +44,7 @@ public class ZombieMemoryPool : MonoBehaviour
 
     public static Zombie GetObject(int id)       // 오브젝트풀이 가지고있는 게임오브젝트를 빌려줌. 없으면 새로운 오브젝트 생성해서 빌려줌
     {
-        if(Instance.poolingObjectQueue.Count > 0)
+        if (Instance.poolingObjectQueue.Count > 0)
         {
             var obj = Instance.poolingObjectQueue[id].Dequeue();
             obj.transform.SetParent(null);
@@ -61,7 +61,7 @@ public class ZombieMemoryPool : MonoBehaviour
         }
     }
 
-    public static void ReturnObject(Zombie obj,int id)       //빌려준거 돌려받는 함수. 돌려받으면 비활성화.
+    public static void ReturnObject(Zombie obj, int id)       //빌려준거 돌려받는 함수. 돌려받으면 비활성화.
     {
         obj.gameObject.SetActive(false);
         obj.transform.SetParent(Instance.transform);

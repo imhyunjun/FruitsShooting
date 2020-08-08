@@ -487,12 +487,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 245977469}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2ad4959b59c544eeba38126aba1c431, type: 3}
+  m_Script: {fileID: 11500000, guid: 9785219d0873981458acba0033d21553, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   zombieList:
   - {fileID: 1685091467389112426, guid: 0e8d2bfab598c4bbd9b06db4de23f99d, type: 3}
-  - {fileID: 5542440075609133048, guid: ec41f5e8e35604957ba858ae5f774cc1, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!4 &245977471
 Transform:
   m_ObjectHideFlags: 0
@@ -600,7 +608,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1015,7 +1023,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141794604}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14205837, y: -0.09036112, z: -10}
+  m_LocalPosition: {x: -0.15033299, y: -0.09036112, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1047885227}
@@ -1545,7 +1553,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1547364912}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ebfb3a58109c74b7980b595ab3c37377, type: 3}
+  m_Script: {fileID: 11500000, guid: 48623905f431d67418077532605158df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &1547364914
@@ -1812,9 +1820,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1d216c603de63042904564fcd08d76d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strawberryPrefab: {fileID: 4869237647877124387, guid: 09cd4ba50d74e9b43be7f8e8be501290,
+  strawberryPrefab: {fileID: 6837085696774128218, guid: 648837e035f1ad0428aa7e944bd4b300,
     type: 3}
-  bananaPrefab: {fileID: 1041987475801130732, guid: 839a208b0bfa4774cb3d8bb6b8b14a89,
+  bananaPrefab: {fileID: 5318477417276711695, guid: e6113756bebea2440b3eb48a096867ea,
     type: 3}
   cinemachine: {fileID: 0}
   fireRate: 0.5
@@ -2118,7 +2126,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698374607}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14205837, y: -0.09036112, z: -10}
+  m_LocalPosition: {x: -0.15033299, y: -0.09036112, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
