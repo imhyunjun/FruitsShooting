@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7828576507898628106}
   m_Layer: 0
   m_Name: Banana
-  m_TagString: Untagged
+  m_TagString: Banana
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,3 +116,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c54e5c4353d56bc478aec0eba7909a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  howMuchRotate: 0

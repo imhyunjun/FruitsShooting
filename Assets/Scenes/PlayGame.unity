@@ -492,7 +492,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombieList:
   - {fileID: 1685091467389112426, guid: 0e8d2bfab598c4bbd9b06db4de23f99d, type: 3}
-  - {fileID: 4807607697003028636, guid: fd9d5ae50e517440f83616f5ba860dfb, type: 3}
+  - {fileID: 5542440075609133048, guid: ec41f5e8e35604957ba858ae5f774cc1, type: 3}
 --- !u!4 &245977471
 Transform:
   m_ObjectHideFlags: 0
@@ -1015,7 +1015,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1141794604}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.14925343, y: -0.09036112, z: -10}
+  m_LocalPosition: {x: -0.14205837, y: -0.09036112, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1047885227}
@@ -1832,7 +1832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6477fdef7bb7a234a86502385129ba22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 2
+  playerSpeed: 0
 --- !u!61 &1658055243
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2118,7 +2118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698374607}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14925343, y: -0.09036112, z: -10}
+  m_LocalPosition: {x: -0.14205837, y: -0.09036112, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

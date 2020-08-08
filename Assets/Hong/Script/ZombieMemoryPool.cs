@@ -25,7 +25,7 @@ public class ZombieMemoryPool : MonoBehaviour
 
     }
 
-    private void Initialize(int initCount, int id)// 게임 시작전 미리 게임 오브젝트를 만들어 놓는다(과부화방지)
+    private void Initialize(int initCount, int id)     // 게임 시작전 미리 게임 오브젝트를 만들어 놓는다(과부화방지)
     {
         for(int i = 0; i<initCount; i++)
         {
@@ -33,7 +33,7 @@ public class ZombieMemoryPool : MonoBehaviour
         }
     }
 
-    private Zombie CreateNewObject(int id)//풀링오브젝트프리팹으로부터 새 게임오브젝트를 만든 뒤 비활성화해서 반환
+    private Zombie CreateNewObject(int id)     //풀링오브젝트프리팹으로부터 새 게임오브젝트를 만든 뒤 비활성화해서 반환
     {
         var newObj = Instantiate(zombieList[id]).GetComponent<Zombie>();
         newObj.ID = id;
@@ -42,7 +42,7 @@ public class ZombieMemoryPool : MonoBehaviour
         return newObj;
     }
 
-    public static Zombie GetObject(int id) // 오브젝트풀이 가지고있는 게임오브젝트를 빌려줌. 없으면 새로운 오브젝트 생성해서 빌려줌
+    public static Zombie GetObject(int id)       // 오브젝트풀이 가지고있는 게임오브젝트를 빌려줌. 없으면 새로운 오브젝트 생성해서 빌려줌
     {
         if(Instance.poolingObjectQueue.Count > 0)
         {
@@ -61,7 +61,7 @@ public class ZombieMemoryPool : MonoBehaviour
         }
     }
 
-    public static void ReturnObject(Zombie obj,int id)//빌려준거 돌려받는 함수. 돌려받으면 비활성화.
+    public static void ReturnObject(Zombie obj,int id)       //빌려준거 돌려받는 함수. 돌려받으면 비활성화.
     {
         obj.gameObject.SetActive(false);
         obj.transform.SetParent(Instance.transform);

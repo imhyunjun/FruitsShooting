@@ -5,7 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Zombie
-  - Orange
+  - Banana
+  - Berry
   layers:
   - Default
   - TransparentFX
