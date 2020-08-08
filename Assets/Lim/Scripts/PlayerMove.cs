@@ -12,12 +12,15 @@ public class PlayerMove : MonoBehaviour
 
     Vector3 playerMoveVec;
     Vector2 playerViewPos;          //플레이어 viewport좌표
-    Vector2 playerWorldPos;         //플레이어 world 좌표   
+    Vector2 playerWorldPos;         //플레이어 world 좌표
+
+    Animator playerAnimator;        //플레이어 애니메이션
 
     private void Start()
     { 
         playerSpeed = 10f;
         transform.position = Vector2.zero;
+        playerAnimator = gameObject.GetComponent<Animator>();
     }
 
     private void Update()
@@ -25,6 +28,13 @@ public class PlayerMove : MonoBehaviour
         playerXAxis = Input.GetAxisRaw("Horizontal");
         playerYAxis = Input.GetAxisRaw("Vertical");
         playerMoveVec.Set(playerXAxis, playerYAxis, 0f);
+       if (playerXAxis != 0)
+       {
+            transform.localScale = new Vector3(-1f * playerXAxis, 1, 0);
+       }
+        playerAnimator.SetFloat("PlayerMoveX", playerXAxis);
+       //else
+       //    transform.localScale = new Vector3(1, 0, 0);
     }
 
     private void FixedUpdate()
