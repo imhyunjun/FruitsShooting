@@ -6,13 +6,20 @@ public class PlayerMove : MonoBehaviour
 {
     float playerXAxis;
     float playerYAxis;
+
+    SpriteRenderer spriteRenderer;  
     
     [SerializeField]
     private float playerSpeed;
 
     Vector3 playerMoveVec;
     Vector2 playerViewPos;          //플레이어 viewport좌표
-    Vector2 playerWorldPos;         //플레이어 world 좌표   
+    Vector2 playerWorldPos;         //플레이어 world 좌표
+
+    private void Awake()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     private void Start()
     { 
@@ -24,6 +31,9 @@ public class PlayerMove : MonoBehaviour
         playerXAxis = Input.GetAxisRaw("Horizontal");
         playerYAxis = Input.GetAxisRaw("Vertical");
         playerMoveVec.Set(playerXAxis, playerYAxis, 0f);
+
+        if (Input.GetButtonDown("Horizontal"))
+            spriteRenderer.flipX = Input.GetAxisRaw("Horizontal") == 1;          // 방향전환
     }
 
     private void FixedUpdate()

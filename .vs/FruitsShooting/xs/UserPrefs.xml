@@ -2,6 +2,7 @@
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hong/Script/ZombieSpawn.cs">
     <Files>
       <File FileName="Assets/Hong/Script/ZombieCollision.cs" Line="9" Column="87" />
@@ -40,14 +41,27 @@
       <File FileName="Assets/Hong/Script/ZombieMove.cs" />
       <File FileName="Assets/Hong/Script/Zombie.cs" Line="1" Column="1" />
 >>>>>>> Stashed changes
+=======
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Lim/Scripts/PlayerMove.cs">
+    <Files>
+      <File FileName="Assets/Hong/Script/BGM.cs" Line="26" Column="1" />
+      <File FileName="Assets/Hong/Script/ZombieCollision.cs" />
+      <File FileName="Assets/Lim/Scripts/FruitMemoryPool.cs" />
+      <File FileName="Assets/Lim/Scripts/PlayerShooting.cs" />
+      <File FileName="Assets/Lim/Scripts/PlayerMove.cs" Line="3" Column="19" />
+>>>>>>> Stashed changes
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="eed00a69-1dbf-4848-ba9b-6f9c68f4bed3" />
 =======
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c1272a73-1171-4d46-97d0-ff6abc3cec53" />
+>>>>>>> Stashed changes
+=======
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="93f6b1a6-996d-48c0-bfc2-b1dd747ae959" />
 >>>>>>> Stashed changes
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
