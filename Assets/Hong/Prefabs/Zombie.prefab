@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 5849634325120094050}
   - component: {fileID: 4987612216090994162}
   - component: {fileID: 3500556764077534395}
-  - component: {fileID: 6037876804966253914}
   - component: {fileID: 3039391112683473050}
+  - component: {fileID: 976782741458725119}
   m_Layer: 0
   m_Name: Zombie
   m_TagString: Zombie
@@ -115,22 +115,6 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 0}
   velocity: 0
   accelaration: 0
---- !u!70 &6037876804966253914
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1685091467389112426}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.036590576, y: 0.0060987473}
-  m_Size: {x: 1.1269836, y: 1.5173073}
-  m_Direction: 0
 --- !u!95 &3039391112683473050
 Animator:
   serializedVersion: 3
@@ -150,3 +134,64 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!60 &976782741458725119
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685091467389112426}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3, y: 3}
+    newSize: {x: 3, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.42, y: -0.84999996}
+      - {x: 0.48999998, y: -0.78}
+      - {x: 0.45999998, y: -0.45}
+      - {x: 0.52, y: -0.26}
+      - {x: 0.68, y: 0.049999997}
+      - {x: 0.87, y: 0.41}
+      - {x: 0.87, y: 0.65}
+      - {x: 0.81, y: 0.75}
+      - {x: 0.74, y: 0.78}
+      - {x: 0.61, y: 0.75}
+      - {x: 0.47, y: 0.84}
+      - {x: 0.16, y: 0.96999997}
+      - {x: -0.16, y: 0.96999997}
+      - {x: -0.29, y: 0.91999996}
+      - {x: -0.53999996, y: 0.76}
+      - {x: -0.69, y: 0.78999996}
+      - {x: -0.81, y: 0.65999997}
+      - {x: -0.81, y: 0.37}
+      - {x: -0.71, y: 0.26}
+      - {x: -0.63, y: 0.099999994}
+      - {x: -0.59, y: -0.01}
+      - {x: -0.56, y: -0.07}
+      - {x: -0.44, y: -0.17999999}
+      - {x: -0.56, y: -0.22}
+      - {x: -0.66999996, y: -0.34}
+      - {x: -0.65999997, y: -0.42999998}
+      - {x: -0.5, y: -0.53999996}
+      - {x: -0.35, y: -0.52}
+      - {x: -0.38, y: -0.72999996}
+      - {x: -0.38, y: -0.85999995}
+      - {x: -0.29, y: -0.93}
+      - {x: -0.13, y: -0.93}
+      - {x: 0.01, y: -0.85999995}
+      - {x: 0.01, y: -0.75}
+      - {x: 0.14, y: -0.82}
+      - {x: 0.34, y: -0.91999996}

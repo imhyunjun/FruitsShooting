@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8140480145287370020}
   - component: {fileID: 1120374212474223832}
   - component: {fileID: -2857746373503894912}
-  - component: {fileID: 5352942080951035599}
+  - component: {fileID: 8797728926850377382}
   m_Layer: 0
   m_Name: Zombie2
   m_TagString: Zombie
@@ -130,8 +130,8 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!70 &5352942080951035599
-CapsuleCollider2D:
+--- !u!60 &8797728926850377382
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -143,6 +143,51 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.034032695, y: 0.19568059}
-  m_Size: {x: 1.0091549, y: 1.8599432}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3, y: 3}
+    newSize: {x: 3, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.25, y: -0.84}
+      - {x: 0.39999998, y: -0.84}
+      - {x: 0.51, y: -0.72999996}
+      - {x: 0.45, y: -0.48999998}
+      - {x: 0.53, y: -0.53}
+      - {x: 0.63, y: -0.53}
+      - {x: 0.7, y: -0.45999998}
+      - {x: 0.71999997, y: -0.41}
+      - {x: 0.71, y: -0.29}
+      - {x: 0.65, y: -0.17999999}
+      - {x: 0.58, y: 0.01}
+      - {x: 0.64, y: 0.08}
+      - {x: 0.7, y: 0.21}
+      - {x: 0.72999996, y: 0.31}
+      - {x: 0.72999996, y: 0.57}
+      - {x: 0.68, y: 0.74}
+      - {x: 0.62, y: 0.95}
+      - {x: 0.44, y: 1.15}
+      - {x: 0.32, y: 1.24}
+      - {x: -0.089999996, y: 1.24}
+      - {x: -0.35, y: 1.13}
+      - {x: -0.53999996, y: 0.91999996}
+      - {x: -0.59, y: 0.74}
+      - {x: -0.59, y: 0.22999999}
+      - {x: -0.57, y: 0.14}
+      - {x: -0.41, y: -0.04}
+      - {x: -0.42999998, y: -0.19}
+      - {x: -0.55, y: -0.47}
+      - {x: -0.47, y: -0.56}
+      - {x: -0.39999998, y: -0.59999996}
+      - {x: -0.29999998, y: -0.77}
+      - {x: -0.22, y: -0.84}
+      - {x: -0.049999997, y: -0.84}
+      - {x: -0.02, y: -0.83}
+      - {x: 0.14, y: -0.66999996}
+      - {x: 0.17999999, y: -0.78999996}
