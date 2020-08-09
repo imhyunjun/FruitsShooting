@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{0E1D80DD-C97F-A99F-EC30-1994A4370C68}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hong/Script/PauseMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Hong/Script/ZombieCollision.cs">
     <Files>
       <File FileName="Assets/Lim/Scripts/PlayerMove.cs" Line="1" Column="1" />
-      <File FileName="Assets/Hong/Script/ZombieCollision.cs" Line="18" Column="21" />
-      <File FileName="Assets/Hong/Script/ZombieMove.cs" Line="1" Column="1" />
-      <File FileName="Assets/Hong/Script/ZombieMemoryPool.cs" Line="65" Column="1" />
-      <File FileName="Assets/Hong/Script/ZombieSpawn.cs" Line="20" Column="6" />
-      <File FileName="Assets/Hong/Script/Zombie.cs" Line="16" Column="46" />
+      <File FileName="Assets/Hong/Script/ZombieCollision.cs" Line="14" Column="30" />
+      <File FileName="Assets/Hong/Script/ZombieMove.cs" />
+      <File FileName="Assets/Hong/Script/ZombieMemoryPool.cs" />
+      <File FileName="Assets/Hong/Script/ZombieSpawn.cs" />
+      <File FileName="Assets/Hong/Script/Zombie.cs" />
       <File FileName="Assets/Hong/Script/PauseMenu.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
