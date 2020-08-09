@@ -11,11 +11,11 @@ public class ZombieCollision : Zombie
     {
         if (collision.gameObject.tag == "Banana")
         {
-            DestroyZombie1();
+            DestroyZombie(0);
         }
         if (collision.gameObject.tag == "Berry")
         {
-            DestroyZombie2();
+            DestroyZombie(1);
         }
     }
 }

@@ -6,14 +6,9 @@ public class Zombie : MonoBehaviour
 {
     public int ID;
 
-    public void DestroyZombie1()
-    {
-        ZombieMemoryPool.ReturnObject(this, 0);
-    }
 
-    public void DestroyZombie2()
+    public void DestroyZombie(int id)
     {
-        ZombieMemoryPool.ReturnObject(this, 1);
+        ZombieMemoryPool.ReturnObject(this, id);
     }
-
 }
