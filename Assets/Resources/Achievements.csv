@@ -1,0 +1,14 @@
+﻿AchievementName,AchievementDescription,AchievementCondition,AchievementCount
+최약체,좀비 1킬,zombie,1
+수습 좀비 사냥꾼,좀비 10킬,zombie,10
+초급 좀비 사냥꾼,좀비 20킬,zombie,20
+중급 좀비 사냥꾼,좀비 30킬,zombie,30
+고급 좀비 사냥꾼,좀비 40킬,zombie,40
+수습 생존가,10초 생존,survive,10
+초급 생존가,20초 생존,survive,20
+중급 생존가,30초 생존,survive,30
+고급 생존가,40초 생존,survive,40
+이제 시작이다,1번 죽음,death,1
+칠전팔기,7번 죽음,death,7
+좀비내성,15번 죽음,death,15
+불사신,100번 죽음,death,100

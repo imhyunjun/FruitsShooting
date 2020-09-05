@@ -1,6 +1,5 @@
 C:\Users\limhy\workspace\unitygame\UnityStudy\FruitShooting\Temp\bin\Debug\Assembly-CSharp.dll
 C:\Users\limhy\workspace\unitygame\UnityStudy\FruitShooting\Temp\bin\Debug\Assembly-CSharp.pdb
-C:\Users\limhy\workspace\unitygame\UnityStudy\FruitShooting\Temp\bin\Debug\Assembly-CSharp.dll.CodeAnalysisLog.xml
 C:\Users\limhy\workspace\unitygame\UnityStudy\FruitShooting\Temp\bin\Debug\Cinemachine.dll
 C:\Users\limhy\workspace\unitygame\UnityStudy\FruitShooting\Temp\bin\Debug\com.unity.cinemachine.editor.dll
 C:\Users\limhy\workspace\unitygame\UnityStudy\FruitShooting\Temp\bin\Debug\Microsoft.Win32.Primitives.dll
